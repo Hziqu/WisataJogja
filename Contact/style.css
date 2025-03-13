@@ -1,0 +1,323 @@
+:root {
+    --primary-color: rgb(255, 255, 255);
+    --second-color: rgb(0, 0, 0);
+    --third-color: black;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Poppins;
+    background-color: white;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(2px);
+    z-index: 1000;
+}
+
+.logo-wrapper img {
+    width: 100px;
+    margin-left: 20px;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin-right: 20px;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--primary-color);
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--accent-color);
+}
+
+/* Search Bar */
+.search {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--primary-color);
+    border-radius: 20px;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.search input {
+    border: none;
+    outline: none;
+    padding: 8px 12px;
+    background: transparent;
+    color: var(--primary-color);
+    width: 180px;
+}
+
+.search input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.search button {
+    border: none;
+    padding: 8px 12px;
+    color: rgba(255, 255, 255, 0.7);
+    background: transparent;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+/* Search Bar di Navbar */
+#searchFormNav {
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+}
+
+/* Search Bar di Hamburger Menu */
+#searchFormMobile {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#searchFormMobile .search {
+    width: 50%;
+    max-width: 150px;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    background: none;
+    margin-right: 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 30px;
+    color: var(--primary-color);
+}
+
+
+/* carousel */
+.carousel {
+position: relative;
+width: 100%;
+max-width: 1200px;
+/* Lebih lebar di desktop */
+height: 500px;
+/* Sesuaikan tinggi */
+margin: 3.5rem auto;
+overflow: hidden;
+border-radius: 10px;
+box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+background-color: black;
+}
+
+.carousel-inner {
+display: flex;
+position: relative;
+transition: transform 0.5s ease-in-out;
+}
+
+.carousel-inner img {
+height: 32rem;
+object-fit: cover;
+opacity: 80%;
+}
+
+.carousel-inner .tx h2 {
+font-size: 70px;
+font-weight: 700;
+}
+
+
+.carousel-inner .tx {
+color: rgb(244, 253, 255);
+position: absolute;
+top: 210px;
+text-align: center;
+left: 50%;
+transform: translateX(-50%);
+}
+
+.carousel-inner .tx p {
+padding: 4px;
+background-color: rgba(240, 248, 255, 0.449);
+font-weight: 100;
+color: rgb(0, 0, 0);
+}
+
+
+.carousel-item {
+width: 100%;
+height: 100%;
+flex-shrink: 0;
+object-fit: cover;
+display: block;
+}
+
+.container {
+max-width: 12000px;
+}
+
+/* end-Carousel */
+
+.contact-info i {
+    color: #ff5c1a;
+    margin-right: 10px;
+}
+
+.notification {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #6fd649;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    display: none;
+    z-index: 1000;
+}
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contact-container h2 {
+    margin-bottom: 20px;
+}
+.contact-info i {
+    color: #ff5c1a;
+    margin-right: 10px;
+}
+
+.contact-info {
+    line-height: 20px;
+}
+.btn-submit {
+    background: #6fd649;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 20%;
+    float: inline-end;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.btn-submit:hover {
+    background: #5cbf3e;
+}
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.conteit {
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.card-d {
+    display: flex;
+}
+
+.card-d .gmb {
+    padding: 5px;
+    width: 90px;
+}
+
+.gmb img {
+    border-radius: 40px;
+    width: 100%;
+
+}
+
+.p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5px;
+}
+
+.form-contak {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.text-m {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.text-m p {
+    display: flex;
+    align-items: center;
+}
+
+.text-m i {
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: #e1e1e1;
+}
+
+.flex {
+    display: flex;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .conteit {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <script src="https://kit.fontawesome.com/1df42cf205.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- ini navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo-wrapper">
+                <img src="../asset/" alt="logo" />
+            </div>
+
+            <div class="nav-container">
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+
+                <form class="search" id="searchFormNav">
+                    <input type="text" id="searchInputNav" placeholder="Search..." />
+                    <button type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+            </div>
+
+            <button class="hamburger" id="hamburger-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+
+        <div class="mobile-menu" id="mobile-menu">
+            <form class="search" id="searchFormMobile">
+                <input type="text" id="searchInputMobile" placeholder="Search..." />
+                <button type="submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+        </div>
+    </header>
+    <!-- ini akhir navbar -->
+
+    <!-- carousel -->
+    <section class="carousel">
+        <div class="carousel-inner">
+            <img src="https://ds393qgzrxwzn.cloudfront.net/cat1/img/images/0/6TYQBHAWMX.jpg" class="carousel-item" />
+            <div class="tx">
+                <h2>Contact Us</h2>
+                <p>Jangan ragu jika ingin Mengirim pesan Kepada kami.</p>
+            </div>
+        </div>
+    </section>
+    <!-- end carousel -->
+
+    <div class="conteit">
+        <div class="contact-container">
+            <h2>Contact Us</h2>
+            <p>Feel free to use the form or drop us an email. Old-fashioned phone calls work too.</p>
+            <div class="contact-info">
+                <p><strong>Phone:</strong> 484.324.2400</p>
+                <p><strong>Email:</strong> info@mediapropercom</p>
+                <p><strong>Address:</strong> 15 West 3rd St. Media, Pa 19063</p>
+            </div>
+            <form action="#" method="post" class="form-contak">
+                <label for="firstName">Name</label>
+                <div class="flex">
+                    <input type="text" id="firstName" placeholder="First" required>
+                    <input type="text" id="lastName" placeholder="Last" required>
+                </div>
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="example@email.com" required>
+                
+                <label for="phone">Phone (optional)</label>
+                <input type="tel" id="phone" placeholder="xxx-xxx-xxxx">
+                
+                <label for="message">Message</label>
+                <textarea id="message" rows="4" placeholder="Type your message ..." required></textarea>
+                
+                <button type="submit" class="btn-submit">Submit</button>
+            </form>
+        </div>
+        <div class="contact-container">
+            <h2>Layanan Pelanggan</h2>
+            <p>Jika butuh bantuan atau lapor bug bisa lagsung contact servis di sini</p>
+            <br>
+            <div class="card-d">
+                <div class="gmb">
+                    <img src="https://hdfs.uconn.edu/wp-content/uploads/sites/601/2020/12/person-icon-grey-e1666368313834.jpg" alt="Servis">
+                </div>
+                <div class="p">
+                    <h5>Service Center</h5>
+                    <p>Lapor bug</p>
+                </div>
+            </div>
+            <br>
+            <div class="card-d">
+                <div class="gmb">
+                    <img src="https://hdfs.uconn.edu/wp-content/uploads/sites/601/2020/12/person-icon-grey-e1666368313834.jpg" alt="Servis">
+                </div>
+                <div class="p">
+                    <h5>Service Center</h5>
+                    <p>Lapor bug</p>
+                </div>
+            </div>
+            <br>
+            <br>
+            <h2>Cara lain Untuk contact</h2>
+            <div class="text-m">
+                <div class="icon">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </div>
+                <p>Facebook</p>
+            </div>
+            <div class="text-m">
+                <div class="icon">
+                    <i class="fa-brands fa-instagram"></i>            
+                </div>
+                <p>Instagram</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
