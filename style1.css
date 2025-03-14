@@ -394,7 +394,7 @@ nav ul li a {
 
 .featured-article {
     position: relative;
-    background: linear-gradient(transparent, rgba(0, 0, 0, 0.557)), url(/assets/images/prambanan1.png);
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.557)), url(assets/images/prambanan1.png);
     background-repeat: no-repeat;
     font-size: calc(16 + 1%);
     background-position: center center;
