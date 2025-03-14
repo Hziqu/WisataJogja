@@ -605,22 +605,6 @@ main {
     margin-bottom: 30px;
 }
 
-.text-container button {
-    background: transparent;
-    border: 2px solid white;
-    color: white;
-    padding: 10px 20px;
-    font-size: 1rem;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.text-container button:hover {
-    background: white;
-    color: black;
-}
-
 .box {
     background:var(--Frud-color);
     color: black;
